@@ -1,4 +1,5 @@
 import './Locations.css'
+import Map from './Map'
 import lwnLibraryImage from '../img/LWN.jpg'
 import blLibraryImage from '../img/BL.jpg'
 import hssLibraryImage from '../img/HSS.jpg'
@@ -96,6 +97,7 @@ const Locations = () => {
           </div>
         </div>
       </div>
+      <Map />
     </div>
   )
 }
