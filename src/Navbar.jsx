@@ -10,7 +10,7 @@ const Navbar = ({ onNavigate, currentPage }) => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <span>&lt;paxed&gt;</span>
+          <img src="/img/logo.jpg" alt="Paxed Logo" className="navbar-logo" />
         </div>
         <ul className="navbar-menu">
           <li><a href="#home" className="navbar-link" onClick={(e) => handleNavClick('home', e)}>Home</a></li>
@@ -20,7 +20,7 @@ const Navbar = ({ onNavigate, currentPage }) => {
           <li><a href="#login" className="navbar-link navbar-login" onClick={(e) => handleNavClick('login', e)}>Login</a></li>
         </ul>
       </div>
-    </nav>
+    </nav> 
   )
 }
 
