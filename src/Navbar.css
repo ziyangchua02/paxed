@@ -29,12 +29,6 @@
   display: block;
 }
 
-.navbar-logo {
-  height: 28px;
-  width: auto;
-  object-fit: contain;
-}
-
 .navbar-menu {
   display: flex;
   list-style: none;

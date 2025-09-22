@@ -10,7 +10,7 @@ const Navbar = ({ onNavigate, currentPage }) => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <img src="/img/logo.jpg" alt="Paxed Logo" className="navbar-logo" />
+          <span>&lt;paxed&gt;</span>
         </div>
         <ul className="navbar-menu">
           <li><a href="#home" className="navbar-link" onClick={(e) => handleNavClick('home', e)}>Home</a></li>
