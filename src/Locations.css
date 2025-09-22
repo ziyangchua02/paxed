@@ -1,0 +1,145 @@
+.locations-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-radius: 16px;
+  padding: 3rem;
+}
+
+.locations-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.locations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.location-item {
+  flex: 0 0 calc(28% - 1rem);
+  width: calc(28% - 1rem);
+}
+
+.location-box {
+  width: 100%;
+  height: 220px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  aspect-ratio: 1;
+  margin-bottom: 0.75rem;
+}
+
+.location-image-placeholder {
+  width: 100%;
+  height: 70%;
+  background-color: #d3d3d3;
+  border-radius: 12px 12px 0 0;
+}
+
+.location-image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  display: block;
+}
+
+#hss-image {
+  object-position: 0% 10%;
+}
+
+#cl-image {
+  object-position: 5% top;
+}
+
+.location-text {
+  height: 30%;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.location-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.location-box h3 {
+  color: #1d1d1f;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.location-box p {
+  color: #1d1d1f;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.capacity-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.capacity-info span {
+  color: #1d1d1f;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.capacity-bar {
+  flex: 1;
+  height: 4px;
+  background-color: #e5e5e5;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.capacity-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .location-box {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .location-box {
+    flex: 0 0 100%;
+  }
+  
+  .locations-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}
+
